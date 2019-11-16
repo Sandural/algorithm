@@ -6,7 +6,7 @@
 提示：数组长度为n, 并且每个数字都是0至n-1, 那么必然会有一个数字重复的。
 * */
 
-let arr = [2, 8, 3, 1, 0, 2, 5, 3]
+let arr = [1, 3, 4, 0, 2, 5, 4, 2]
 /*let obj = {}
 let C = []
 
@@ -26,3 +26,13 @@ for (let key in obj) {
   }
 }
 console.log(C)*/
+for (let i = 0; i < arr.length; i++) {
+  if (i !== arr[i]) {
+    if(arr[arr[i]] !== arr[i]) {
+       [arr[arr[i]], arr[i]] = [arr[i], arr[arr[i]]]
+    } else {
+      console.log(arr[i])
+      break
+    }
+  }
+}

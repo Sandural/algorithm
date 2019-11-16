@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .wrapper {
+            padding: 10px;
+        }
+        .container {
+            position: absolute;
+            left: calc(50% - 5rem);
+            top: calc(50% - 2.5rem);
+            /*left: 50%;
+            top: 50%;
+            transform: translate(-50%);*/
+            width: 10rem;
+            height: 5rem;
+            font-size: 20px;
+            text-align: center;
+            line-height: 5rem;
+            background-color: red;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1. 屏幕正中间有个元素 A 随着屏宽度的增加，始终需要满足以下条件
+
+A 元素垂直居中于屏幕中央
+A 元素距离屏左右边距各 10 px;
+A 元素里面的文字”A“的 font-size:20 px 水平垂直居中
+A 元素的高度始终是 A 元素宽度的 50%:（如果不定可以实现为 A 元素的高度围定为 200 px;)
+请用 hml 及 css 实现
+
+-->
+<div class="wrapper">
+    <div class="container">
+        A
+    </div>
+</div>
+
+</body>
+</html>

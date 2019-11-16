@@ -8,11 +8,14 @@
 
 let arr = [22, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48]
 
-for (let i = 0; i < arr.length; i++) {
+let border = -1
+for (let i = 0; i < arr.length - i; i++) {
   if (arr[i] % 2 === 0) {
-    let a = arr.splice(i, 1)
-    arr.push(a)
-    i = i - 1
+    border += 1
+    console.log(arr[i])
+    // console.log('odds: ', arr.splice(i, 1))
+    arr.splice(border, 0, arr.splice(i, 1)[0])
+    // console.log(arr)
   }
 }
 
